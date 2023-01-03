@@ -116,13 +116,15 @@ img {
 
 
 @media screen and (max-width: 767px) {
-    .site-nav {
-        display: none;
+    
+.site-nav {
+    display: none;
     }
     
-    .auth-nav {
-        display: none;
+.auth-nav {
+    display: none;
     }
+}
 
 
 .header-page {
@@ -143,7 +145,7 @@ img {
     padding: 0;
     line-height: 0;
 }
-}
+
 
 /* .header-page 
 {
