@@ -163,21 +163,21 @@ img {
 
 /* -------------------- FOR TABLET ---------------------------------- */
 
-@media screen and (min-width 768px){
+@media screen and (min-width: 768px) {
   
 .header-page {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 70px;
+    justify-content: center;
+    /* height: 70px; */
 
  }
 
 .site-nav {
     display: flex;
-    align-items: center
-
+    align-items: center;
+    justify-content: center ;
  }
 
 }
