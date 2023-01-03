@@ -63,15 +63,6 @@ img {
 }
 
 
-/* .container {
-    
-    width: 1158px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-} */
-
 .container {
     
     padding-left: 16px;
@@ -83,8 +74,6 @@ img {
 
 
 @media screen and (min-width: 480px) {
-
-    
 
     .container { 
         width: 428px;
@@ -114,6 +103,30 @@ img {
 
 /* ======================== HEADER ================== */
 
+
+/* Логотип */
+
+
+.logo-text {
+    display: flex;
+    height: 22px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+    } 
+
+    .studiotext-header {
+        color: var(--title-text-color);
+       }
+
+
+
+/*  ----------- FOR MOBILE -------------------------- */
 
 @media screen and (max-width: 767px) {
     
@@ -147,6 +160,29 @@ img {
 }
 
 
+
+/* -------------------- FOR TABLET ---------------------------------- */
+
+@media screen and (min-width 768px){
+  
+.header-page {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+ }
+
+.site-nav {
+    display: flex;
+    align-items: center
+
+ }
+
+}
+
+
 /* .header-page 
 {
     display: flex;
@@ -156,25 +192,7 @@ img {
 
 
 
-/* Логотип */
 
-
-.logo-text {
-    display: flex;
-    height: 22px;
-
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--accent-text-color);
-    } 
-
-    .studiotext-header {
-        color: var(--title-text-color);
-       }
 
 
     /* .logosize {
