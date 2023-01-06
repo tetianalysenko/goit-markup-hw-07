@@ -861,7 +861,7 @@ img {
  @media screen and (min-width: 1200px) {
 
     .features {
-        outline: 3px solid red; 
+        /* outline: 3px solid red;  */
        padding-top: 120px;
        padding-bottom: 120px;
    }
@@ -941,7 +941,7 @@ img {
  @media screen and (max-width: 1199px) {
 
 .features {
-        outline: 3px solid red; 
+        /* outline: 3px solid red;  */
         padding-top: 96px;
         padding-bottom: 96px;
 }
@@ -995,7 +995,7 @@ img {
 @media screen and (max-width: 767px) {
 
     .features {
-            outline: 3px solid red; 
+            /* outline: 3px solid red;  */
             padding-top: 96px;
             padding-bottom: 96px;
     }
@@ -1044,7 +1044,7 @@ img {
 
 
 .tasks {
-    outline: 02px solid red;
+    /* outline: 02px solid red; */
     padding-bottom: 120px;
 }
 
@@ -1805,10 +1805,6 @@ img {
     /* height: 310px;    */
 } 
 
-.footer-info {    
-}
-
-
 
 .gen-footer .footer-text {
     margin-top: 16px;
@@ -2032,7 +2028,7 @@ img {
 /*  ---------------------------------  FOOTER FOR TABLET 768-1199px-------- */
 
 
-@media screen and (min-width:768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 
     .footer {
         background-color:#2E2F42;
@@ -2049,12 +2045,6 @@ img {
     
         /* height: 310px;    */
     } 
-
-
-.footer-info-wrapper {
-
-
-}
 
 
 
@@ -2581,10 +2571,6 @@ img {
     position: relative;
  }
 
- .modal-form-field {
-
-    
-}
 
 .modal-title {
     margin-bottom: 16px;
