@@ -21,18 +21,21 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="topline">
-      <div class="container header-page">
-        <a href="./index.html" class="lineout logo-text"
-          >WEB<span class="studiotext-header">STUDIO</span>
-        </a>
-        <nav>
+    <header class="header">
+      <div class="container header-page topline">
+        <div class="logosize">
+          <a href="./index.html" class="lineout logo-text">
+            WEB<span class="studiotext-header">STUDIO</span>
+          </a>
+        </div>
+
+        <nav class="main-navigation">
           <ul class="site-nav">
             <li class="nav-links">
               <a href="./index.html" class="link lineout">Studio</a>
             </li>
             <li class="nav-links">
-              <a href="./portfolio.html" class="link link-current lineout"
+              <a href="./portfolio.html" class="link lineout link-current"
                 >Portfolio</a
               >
             </li>
@@ -52,21 +55,108 @@
             <a href="tel:+110001111111" class="lineout">+11 (000) 111-11-11</a>
           </li>
         </ul>
+
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg width="29.54px" height="18.62px" class="mobile-menu-open-icon">
+            <use href="./images/icon.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-container">
+          <button type="button" class="mobile-menu-cls-btn" data-menu-close>
+            <svg class="mobile-menu-cls-icon" width="8" height="8">
+              <use href="./images/icon.svg#icon-cls-btn"></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu-position">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-list-item">
+                <a class="mobile-menu-list-link lineout" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-list-item">
+                <a class="mobile-menu-list-link lineout" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-list-item">
+                <a class="mobile-menu-list-link lineout" href="">Contacts</a>
+              </li>
+            </ul>
+
+            <div class="mobile-menu-contandsoc-position">
+              <ul class="mobile-menu-contacts">
+                <li class="mobile-menu-contacts-list">
+                  <a class="mobile-menu-contacts-tel" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu-contacts-list">
+                  <a
+                    class="mobile-menu-contacts-mail"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mobile-menu-social">
+                <li class="mobile-menu-social-item">
+                  <a href="" class="">
+                    <svg width="40px" height="40px">
+                      <use href="./images/icon.svg#icon-inst-modal"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-social-item">
+                  <a href="" class="">
+                    <svg width="40px" height="40px">
+                      <use href="./images/icon.svg#icon-twitter-modal"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="mobile-menu-social-item">
+                  <a href="" class="">
+                    <svg width="40px" height="40px">
+                      <use href="./images/icon.svg#icon-fb-modal"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-social-item">
+                  <a href="" class="">
+                    <svg width="40px" height="40px">
+                      <use href="./images/icon.svg#icon-linkedin-modal"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="filter">
         <div class="container">
           <ul class="filter-block">
-            <li>
+            <li class="filter-item">
               <button type="button" class="filterbutton">All</button>
             </li>
-            <li>
+            <li class="filter-item">
               <button type="button" class="filterbutton">Web site</button>
             </li>
-            <li><button type="button" class="filterbutton">App</button></li>
-            <li><button type="button" class="filterbutton">Design</button></li>
-            <li>
+            <li class="filter-item">
+              <button type="button" class="filterbutton">App</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filterbutton">Design</button>
+            </li>
+            <li class="filter-item">
               <button type="button" class="filterbutton">Marketing</button>
             </li>
           </ul>
@@ -247,10 +337,16 @@
 
     <footer class="footer">
       <div class="container gen-footer">
-        <div class="footer-info">
-          <a href="./index.html" class="logo-text lineout">
-            WEB<span class="studiotext-footer">STUDIO</span>
-          </a>
+        <div class="footer-info-wrapper">
+          <div class="footer-info">
+            <a
+              href="./index.html"
+              class="footer-logo-position logo-text lineout"
+            >
+              WEB<span class="studiotext-footer">STUDIO</span>
+            </a>
+          </div>
+
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -292,9 +388,10 @@
         </div>
 
         <div class="footer-form-block">
-          <h3 class="footer-title">Subscribe</h3>
-          <!-- <p class="footer-subscribe-text">Subscribe</p> -->
-          <form>
+          <!-- <h3 class="footer-title">Subscribe</h3> -->
+          <p class="footer-subscribe-text">Subscribe</p>
+
+          <form class="footer-form-position">
             <div class="footer-form">
               <input
                 class="footer-form-subsc-input"
@@ -315,5 +412,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
