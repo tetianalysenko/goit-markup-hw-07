@@ -6,6 +6,14 @@
 /* колір лого футер СТУДІО та фону сект  color: #F4F4FD; */
 
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+
+  }
+
+
+
 :root {
     --main-text-color: #434455;
     --title-text-color: #2E2F42;
@@ -58,7 +66,7 @@ p {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -498,7 +506,10 @@ img {
 
     text-align: center;
 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg) ; 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/peopleoffice.jpg) ; 
+
     background-color: rgba(46, 47, 66, 0.7); 
     background-position: center;
     background-repeat: no-repeat;
@@ -564,6 +575,10 @@ img {
            
     padding-bottom: 112px;
     padding-top: 112px;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-mobile.jpg) ; 
     
 }
 
@@ -576,17 +591,33 @@ img {
 
 }
 
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-mobile@2x.jpg) ; 
+    }
+  }
+
 /* --------------------------- HERO FOR TABLET 0-1199px -------- */
 
 @media screen and (min-width: 768px) {
 
-    .hero { 
+.hero { 
 
-        max-width: 768px;
-        height: 436px;
+    max-width: 768px;
+    height: 436px;
         
-        padding-bottom: 108px;
-        padding-top: 112px;
+    padding-bottom: 108px;
+    padding-top: 112px;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-tablet.jpg) ; 
     
 }
 
@@ -604,6 +635,18 @@ img {
 }
 
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-tablet@2x.jpg) ; 
+    }
+  }
+
+
 /* -----------------------HERO FOR DESKTOP 1200-3000px ------------------ */
 
 
@@ -618,6 +661,10 @@ img {
     padding-bottom: 192px;
     padding-top: 192px;
 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-desktop.jpg) ; 
+
     
   }   
 
@@ -629,6 +676,17 @@ img {
 
 }
 
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-desktop@2x.jpg) ; 
+    }
+  }
 
 
 
