@@ -1853,7 +1853,7 @@ img {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: transform visibility;
+    
 
     display: flex;
     flex-direction: column;
@@ -1861,7 +1861,7 @@ img {
     width: 408px;
     height: 600px;
     max-height: 100vh;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 
     padding: 72px 24px 5px 24px ;
 
