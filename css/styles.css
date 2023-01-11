@@ -1859,11 +1859,11 @@ img {
     flex-direction: column;
 
     width: 408px;
-    height: 590px;
-    max-height: 99vh;
+    height: 600px;
+    max-height: 100vh;
     overflow-y: scroll;
 
-    padding: 72px 24px 24px 24px ;
+    padding: 72px 24px 5px 24px ;
 
     border-radius: 4px;
                     
