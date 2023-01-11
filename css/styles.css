@@ -1849,7 +1849,7 @@ img {
     position: absolute;
     left: 50%; 
     top: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1) rotate(720deg);
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1920,7 +1920,7 @@ img {
 
 
   .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(2) rotate(0deg);
 }
 
  /* =========================== MODAL FORM ================ */
